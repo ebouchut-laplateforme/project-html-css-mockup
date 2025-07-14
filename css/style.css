@@ -1,0 +1,67 @@
+/* style.css */
+
+/*
+* ~~~~~~~~~~~~~~~~~~~~
+* Element Selectors
+* ~~~~~~~~~~~~~~~~~~~~
+*/
+
+/* ~~~~~ CSS Variables (aka. Custom Properties) */
+:root {
+  /* ~~~~~ Color Scheme */
+  --mockup-body-background-color:        white;
+
+  --mockup-menu-color:                   #383838;
+  --mockup-menu-background-color:        #F0F0F0;
+  --mockup-menu-border-color:            #ADADAD;
+
+  --mockup-section-001-background-color: #5728BC;
+}
+
+body {
+  background-color: var(--mockup-body-background-color);
+}
+
+main {
+
+  section::first-child {
+    background-color:  var(--mockup-section-001-background-color);
+  }
+}
+
+/*
+* ~~~~~~~~~~~~~~~~~~~~
+* Class Selectors
+* ~~~~~~~~~~~~~~~~~~~~
+*/
+.nav-menu {
+  display:           flex;
+  justify-content:   flex-end; /* Right align its flex/menu/list items */
+  align-items:       center;   /* Center its flex items vertically */
+
+  color:             var(--mockup-menu-color);
+
+  & > li {
+    /* Add a bit of space around each list item */
+    padding-left:     0.5rem;
+    padding-right:    0.5rem;
+
+    list-style-type: none; /* Disable the bullet point next to each list item */
+
+    &:first-child {
+      margin-right:  auto; /* Push the fist list item to the far-left of its container */
+      padding:       0.5em;
+      border:        1px solid var(--mockup-menu-border-color);
+      border-radius: 0; /* Disable the browser default backed-in border radius (if any) */
+    }
+
+    &:has(a:hover) {
+      background-color: var(--mockup-menu-background-color);
+    }
+  }
+
+  & a {
+    text-decoration-line: none; /* Remove underline from menu links */
+    color:                var(--mockup-menu-color);
+  }
+}
