@@ -15,18 +15,16 @@
   --mockup-menu-background-color:        #F0F0F0;
   --mockup-menu-border-color:            #ADADAD;
 
-  --mockup-section-001-background-color: #5728BC;
+  --mockup-section-1-background-color:  #5728BC;
+  --mockup-section-1-gap:               2em;
 }
 
 body {
   background-color: var(--mockup-body-background-color);
 }
 
-main {
-
-  section::first-child {
-    background-color:  var(--mockup-section-001-background-color);
-  }
+a {
+  text-decoration-line: none;  /* Remove underline from menu links */
 }
 
 /*
@@ -61,7 +59,62 @@ main {
   }
 
   & a {
-    text-decoration-line: none; /* Remove underline from menu links */
     color:                var(--mockup-menu-color);
+  }
+}
+
+.flex-container {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  flex-wrap:        wrap;
+  gap:              var(--mockup-section-1-gap);
+
+  padding:          3em;
+
+  background-color: var(--mockup-section-1-background-color);
+
+  & > * {
+    flex: 0 1 calc(40% - (var(--mockup-section-1-gap) / 2));
+  }
+
+  .flex-item-image {
+    /* Force the image to respect the flex basis */
+
+    /* Take full width of the flex item */
+    width:      100%;
+    /* Maintain aspect ratio */
+    height:    auto;
+    /* Prevent overflow */
+    max-width: 100%;
+    /* ‼️ Allow the flex item to shrink below the image's width */
+    min-width: 0;
+    /* Fill the flex item and maintain while maintaining its aspect ratio */
+    object-fit: cover;
+  }
+
+  article {
+
+    h2 {
+      display:          inline; /* Stick with the mockup but not recommended IMO! */
+
+      /* Replace each newline found in the HTML h2 tag with a line break */
+      white-space:      pre-line;
+
+      background-color: #013566;
+      color:            #EFF3F6;
+    }
+
+    & > p {
+      color:            #f2eff9;
+
+      a {
+        padding:           0.8em;
+        border-radius:     0.8em;
+
+        background-color: #e75266;
+        color:            #fbe8ea;
+      }
+    }
   }
 }
