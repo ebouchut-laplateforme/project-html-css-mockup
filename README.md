@@ -5,11 +5,11 @@
 Intégrer une maquette représentant la **première page d’un site web**.  
 L’exercice doit être réalisé **sans framework CSS** (type Bootstrap), uniquement avec **HTML5** et **CSS3**.
 
-The demo website (hosted on *GitHub*) is here:
+Le site Web de démo est consultable ici:
 
 https://ebouchut-laplateforme.github.io/project-html-css-mockup/
 
-The website is deployed on *GitHub Pages*  each time we push the `main` branch.
+Il est déployé automatiquement par *GitHub Pages*, chaque fois qu'on pousse la branche `main` sur GitHub.
 
 ---
 
