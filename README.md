@@ -75,12 +75,12 @@ site-maquette-html5/
 ## 🧩 Structure
 
 - `Header et Section 1`  
-  ![first section](assets/img/specs/header_sec1.png)
+  ![first section](assets/images/specs/header_sec1.png)
 - `Section 2`  
-  ![first section](assets/img/specs/sec2.png)
+  ![first section](assets/images/specs/sec2.png)
 - `Section 3`  
-  ![first section](assets/img/specs/sec3.png)
+  ![first section](assets/images/specs/sec3.png)
 - `Section 4`  
-  ![first section](assets/img/specs/sec4.png)
+  ![first section](assets/images/specs/sec4.png)
 - `Footer`  
-  ![first section](assets/img/specs/footer.png)
+  ![first section](assets/images/specs/footer.png)
