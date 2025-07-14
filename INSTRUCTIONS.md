@@ -1,4 +1,4 @@
-[Revenir au README](README.md)
+[Revenir au README](README.md#consignes-et-recommendations)
 
 ## Consignes et Recommandations
 
@@ -77,4 +77,4 @@ site-maquette-html5/
   ![first section](assets/images/specs/footer.png)
 
 
-[Revenir au README](README.md)
+[Revenir au README](README.md#consignes-et-recommendations)
